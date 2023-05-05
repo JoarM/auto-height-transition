@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'auto-height-modal';
+  open = false;
+
+  toggle(e: any): void {
+    console.log(e)
+    this.open = !this.open;
+  } 
 }
